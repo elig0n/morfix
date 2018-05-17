@@ -17,6 +17,6 @@ except IndexError:
 html = r.content
 parsed_html = BeautifulSoup(html, "lxml")
 try:
-    print parsed_html.body.find('div', attrs={'class':'default_trans'}).text
+    print (parsed_html.body.find('div', attrs={'class':'default_trans'}).text)
 except AttributeError:
-    print parsed_html.body.find('div', attrs={'class':'translation translation_he heTrans'}).text
+    print (parsed_html.body.find('div', attrs={'class':'translation translation_he heTrans'}).text.encode("utf-8"))
