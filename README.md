@@ -1,2 +1,6 @@
 # morfix
-Get Morfix hebrew/english terms translation/dictionary to the command line
+Morfix translation for your shell. Works both ways (he->en && en->he)
+Syntax: 
+
+    $ morfix TERM
+    
